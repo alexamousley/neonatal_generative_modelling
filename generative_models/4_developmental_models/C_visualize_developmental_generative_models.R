@@ -6,10 +6,10 @@
 # This script runs generalized additive models on the connection data from the developmental generative models
 
 # 1) Connection Counts
-#   - Rich, feeder, local connections counts plotted separately
+#   - Rich, feeder, and local connections counts plotted separately
 # 2) Average connection lengths
 # 3) Connection lengths for each connection type
-#   - Rich, feeder, local connection lengths plotted separately
+#   - Rich, feeder, and local connection lengths plotted separately
 
 # Clear environment
 rm(list=ls())
@@ -27,7 +27,7 @@ library('gratia')
 library('lmerTest')
 
 # Load demographic data
-setwd("/set/path/length/")                       # <<<<<< SET
+setwd("/set/your/path/")                       # <<<<<< SET
 term_counts <- readMat('example_mean_term_counts.mat')
 term_counts <- as.data.frame(term_counts$mean.term.counts)
 preterm_counts <- readMat('example_mean_preterm_counts.mat')
@@ -75,9 +75,9 @@ for (i in 1:length(grouped_models)) {
 rich_counts_model <- gam(rich_counts ~ s(iteration,bs="cr",k=10)+group,
                         data=models,method='REML')
 # Print model summary
-summary(rich_counts_model) # If 'group' is significant, make seperate models for visualization
+summary(rich_counts_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_rich_counts_model <- gam(term_rich_count ~ s(iteration,bs="cr",k=10),
                               data=grouped_models,method='REML')
 term_reg_plots <- visreg(term_rich_counts_model,gg=TRUE,type="conditional") 
@@ -97,9 +97,9 @@ rich_connections_plot <- ggplot()+
 feeder_counts_model <- gam(feeder_counts ~ s(iteration,bs="cr",k=10)+group,
                          data=models,method='REML')
 # Print model summary
-summary(feeder_counts_model) # If 'group' is significant, make seperate models for visualization
+summary(feeder_counts_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_feeder_counts_model <- gam(term_feeder_count ~ s(iteration,bs="cr",k=10),
                               data=grouped_models,method='REML')
 term_reg_plots <- visreg(term_feeder_counts_model,gg=TRUE,type="conditional") 
@@ -119,9 +119,9 @@ feeder_connections_plot <- ggplot()+
 local_counts_model <- gam(local_counts ~ s(iteration,bs="cr",k=10)+group,
                          data=models,method='REML')
 # Print model summary
-summary(local_counts_model) # If 'group' is significant, make seperate models for visualization
+summary(local_counts_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_local_counts_model <- gam(term_local_count ~ s(iteration,bs="cr",k=10),
                               data=grouped_models,method='REML')
 term_reg_plots <- visreg(term_local_counts_model,gg=TRUE,type="conditional") 
@@ -142,9 +142,9 @@ local_connections_plot <- ggplot()+
 lengths_model <- gam(lengths ~ s(iteration,bs="cr",k=10)+group,
                          data=models,method='REML')
 # Print model summary
-summary(lengths_model) # If 'group' is significant, make seperate models for visualization
+summary(lengths_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_lengths_model <- gam(term_length ~ s(iteration,bs="cr",k=10),
                               data=grouped_models,method='REML')
 term_reg_plots <- visreg(term_lengths_model,gg=TRUE,type="conditional") 
@@ -170,9 +170,9 @@ length_plot <- ggplot()+
 rich_lengths_model <- gam(rich_lengths ~ s(iteration,bs="cr",k=10)+group,
                          data=models,method='REML')
 # Print model summary
-summary(rich_lengths_model) # If 'group' is significant, make seperate models for visualization
+summary(rich_lengths_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_rich_lengths_model <- gam(term_rich_length ~ s(iteration,bs="cr",k=10),
                               data=grouped_models,method='REML')
 term_rich_plots <- visreg(term_rich_lengths_model,gg=TRUE,type="conditional") 
@@ -185,9 +185,9 @@ preterm_rich_plots <- visreg(preterm_rich_lengths_model,gg=TRUE,type="conditiona
 feeder_lengths_model <- gam(feeder_lengths ~ s(iteration,bs="cr",k=10)+group,
                            data=models,method='REML')
 # Print model summary
-summary(feeder_lengths_model) # If 'group' is significant, make seperate models for visualization
+summary(feeder_lengths_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_feeder_lengths_model <- gam(term_feeder_length ~ s(iteration,bs="cr",k=10),
                                 data=grouped_models,method='REML')
 term_feeder_plots <- visreg(term_feeder_lengths_model,gg=TRUE,type="conditional") 
@@ -200,9 +200,9 @@ preterm_feeder_plots <- visreg(preterm_feeder_lengths_model,gg=TRUE,type="condit
 local_lengths_model <- gam(local_lengths ~ s(iteration,bs="cr",k=10)+group,
                           data=models,method='REML')
 # Print model summary
-summary(local_lengths_model) # If 'group' is significant, make seperate models for visualization
+summary(local_lengths_model) # If 'group' is significant, make separate models for visualization
 
-# Make seperate models
+# Make separate models
 term_local_lengths_model <- gam(term_local_length ~ s(iteration,bs="cr",k=10),
                                data=grouped_models,method='REML')
 term_local_plots <- visreg(term_local_lengths_model,gg=TRUE,type="conditional") 
