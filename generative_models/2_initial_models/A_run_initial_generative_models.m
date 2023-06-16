@@ -16,8 +16,8 @@ of the whole sample's binarized networks.
 %% Add paths and load data
 clear;clc;
 
-% Set save directory (if you would like to save the models, rather than use the example data provided)
-sdir = '/set/your/path/';          % <<<<<<<<<< SET
+% Set save directory 
+% sdir = '/set/your/path/';        % <<<<<<<<<< SET if you would like to save the models, rather than use the example data provided (uncomment save lines 131 and 133)
 
 % Add Brain Connectivity Toolbox
 addpath('/set/your/path/');        % <<<<<<<<<< SET
@@ -126,11 +126,11 @@ for model = 1:nmodels
     output.networks(model,:,:) = B;
 end
 
-%% Save generative model output
+%% Save generative model output (uncomment if you would like to save)
 % Change directory
-cd(sdir);
+% cd(sdir);
 % Save file
-save('intial_generative_models.mat','output','-v7.3'); % Likely will need the '-v7.3' due to size of the struct
+% save('intial_generative_models.mat','output','-v7.3'); % Likely will need the '-v7.3' due to size of the struct
 
 %% Define KS function
 % This function was written by Danyal Akarca (danyal.akarca@mrc-cbu.cam.ac.uk),
