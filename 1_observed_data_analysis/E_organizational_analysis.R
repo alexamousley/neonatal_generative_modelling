@@ -17,7 +17,7 @@
 #   - Rich Connections Proportional to Total Connections
 
 # NOTE: Models here are run with k = 3 due to it being set up for example data with only 10 'participants' but in
-#       the actual anaylsis, k was set to 50.
+#       the actual analysis, k was set to 50.
 
 # Clear environment
 rm(list=ls())
@@ -33,7 +33,7 @@ library('gridExtra')
 library('gratia') 
 
 # Load demographic data
-setwd("/imaging/astle/am11/dHCP/neonatal_generative_modelling/example_data/")
+setwd("/set/your/path/")                         # <<<<<<<<< SET
 birth_age <- readMat('example_birth_age.mat')
 birth_age <- as.data.frame(birth_age$birth.age)
 postconceptional_age <- readMat('example_postconceptional_age.mat')
