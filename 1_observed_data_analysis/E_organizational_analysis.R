@@ -200,7 +200,7 @@ path_length_model <- gam(characteristic_path_length ~ s(postconceptional_age,bs=
 gam.check(path_length_model)  # Check 'k' value (if significant, increase k and rerun)
 appraise(path_length_model)   # Create plots
 # Determine if wiggle is needed (via cs basis function)
-model_cs <- gam(path_length ~ s(postconceptional_age,bs="cs",k=3)+s(birth_age,bs="cs",k=3)
+model_cs <- gam(characterisitic_path_length ~ s(postconceptional_age,bs="cs",k=3)+s(birth_age,bs="cs",k=3)
                 +sex+head_circum+translation+rotation, data=data,method='REML')
 p <- par(mfrow=c(2,2))    # Plot and visually inspet if model_cs reduced wiggle
 p1 <- plot.gam(path_length_model,rug=T)
