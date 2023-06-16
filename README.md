@@ -16,6 +16,7 @@ Toolboxes/Functions
 	- Betzel, R. F., Griffa, A., Hagmann, P., & Mišić, B. (2019). Distance-dependent consensus thresholds for generating group-representative structural brain networks. Network neuroscience, 3(2), 475-496.
 
 **Example data**
+
 Fake data is provided for 10 'participants' (see /example_data/README.md). After cloning the repository, you will be able to run all scripts with the example data (without saving intermediate data) by adding the path to the example data at the beginning of the scripts.
 
 **Script outline:**
