@@ -4,7 +4,6 @@ The variables are not well organized due to the ease of being able to set one pa
 Alexa Mousley (alexa.mousley@mrc-cbu.cam.ac.uk) if you have any questions. 
 
 **Atlas**
-
 The atlas data (regions and euclidiean_distances) has been calculated from the AAL90 neonatal atlas.
 
 **The atlas is publicly available at:**
