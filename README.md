@@ -10,11 +10,9 @@ Software
 
 Toolboxes/Functions
 * Brain Connectivity Toolbox (https://sites.google.com/site/bctnet/home?authuser=0)
-Rubinov, M., & Sporns, O. (2010). Complex network measures of brain connectivity: uses and interpretations. Neuroimage, 52(3), 1059-1069.
+	- Rubinov, M., & Sporns, O. (2010). Complex network measures of brain connectivity: uses and interpretations. Neuroimage, 52(3), 1059-1069.
 * Consensus network creation (https://www.brainnetworkslab.com/coderesources)
-Betzel, R. F., Griffa, A., Hagmann, P., & Mišić, B. (2019). 
-Distance-dependent consensus thresholds for generating group-representative
-structural brain networks. Network neuroscience, 3(2), 475-496.
+	- Betzel, R. F., Griffa, A., Hagmann, P., & Mišić, B. (2019). Distance-dependent consensus thresholds for generating group-representative structural brain networks. Network neuroscience, 3(2), 475-496.
 
 **Script outline:**
 1) Observed topological analysis
