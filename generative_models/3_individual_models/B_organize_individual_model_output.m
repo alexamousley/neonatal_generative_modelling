@@ -12,8 +12,8 @@ into one struct to be used in further analysis.
 %% Add paths and load data
 clear;clc;
 
-% Set save directory (if you would like to save the models, rather than use the example data provided)
-sdir = '/set/your/path/';          % <<<<<<<<<< SET
+% Set save directory 
+% sdir = '/set/your/path/';        % <<<<<<<<<< SET if you would like to save the models, rather than use the example data provided (uncomment line 66 to save)
 
 % Add data path 
 addpath('/set/your/path');         % <<<<<<<<<< SET
@@ -63,4 +63,4 @@ generative_models.ks = ks_sample;
 generative_models.networks = networks_sample;
 generative_models.parameters = parameters_sample;
 generative_models.procedure = string({'Grid search n=10000 parameters eta [-3 0] and gamma [0.1 0.6] limits'}); % Include descriptives of how the models were run
-save('generative_models.mat','generative_models','-v7.3');
+%save('generative_models.mat','generative_models','-v7.3');
