@@ -12,6 +12,7 @@ rm(list=ls())
 library('R.matlab')
 library('ggplot2')
 library('reshape')
+library('dplyr')
 
 # Load data
 setwd('/set/your/path/')                             # <<<<<<< SET
