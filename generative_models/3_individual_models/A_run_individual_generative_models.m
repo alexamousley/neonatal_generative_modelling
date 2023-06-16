@@ -12,8 +12,8 @@ models.
 %% Add paths and load data
 clear;clc;
 
-% Set save directory (if you would like to save the models, rather than use the example data provided)
-sdir = '/set/your/path/';          % <<<<<<<<<< SET
+% Set save directory 
+% sdir = '/set/your/path/';        % <<<<<<<<<< SET if you would like to save the models, rather than use the example data provided (uncomment lines 124 and 126)
 
 % Add Brain Connectivity Toolbox
 addpath('/set/your/path/');        % <<<<<<<<<< SET
@@ -21,9 +21,9 @@ addpath('/set/your/path/');        % <<<<<<<<<< SET
 % Add data path 
 addpath('/set/your/path');         % <<<<<<<<<< SET
 % Load binarized networks
-load('/example_binarized_connectomes.mat');
+load('example_binarized_connectomes.mat');
 % Load atlas euclidean distances
-load('/euclidean_distances.mat');
+load('euclidean_distances.mat');
 
 nsub = size(example_binarized_connectomes,1); % Define number of participants
 
@@ -121,9 +121,9 @@ for sub = 1:nsub
     output.networks = B;
     
     % Change directory
-    cd(sdir);
+    % cd(sdir);
     % Save pariticpant's generative models
-    save(sprintf('generative_output_sub-%g.mat',sub),'output','-v7.3');
+    % save(sprintf('generative_output_sub-%g.mat',sub),'output','-v7.3');
 end
 
 %% Define KS function
