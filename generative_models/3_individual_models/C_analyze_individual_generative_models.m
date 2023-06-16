@@ -19,10 +19,10 @@ models.
 clear;clc;
 
 % Add Brain Connectivity Toolbox
-addpath('/imaging/astle/am11/toolboxes/2019_03_03_BCT/');                        % <<<<<<<<<< SET
+addpath('/set/your/path/');        % <<<<<<<<<< SET
 
 % Add data path 
-addpath('/imaging/astle/am11/dHCP/neonatal_generative_modelling/example_data/'); % <<<<<<<<<< SET
+addpath('/set/your/path/');        % <<<<<<<<<< SET
 % Load binarized networks
 load('example_binarized_connectomes.mat');
 % Load individual generative models stuct
@@ -41,9 +41,6 @@ load('example_rich_club_nodes.mat');
 % Set number of participants and generative models
 nsub = size(example_binarized_connectomes,1); 
 nruns = length(generative_models.energy);
-
-% Set directory to save data
-datadir = '/set/your/path';
 
 %% (1) Identify best fitting parameters and lowest energy model
 
