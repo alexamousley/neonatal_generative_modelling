@@ -7,7 +7,7 @@ Email: alexa.mousley@mrc-cbu.cam.ac.uk
 This script explores the output from 13 different generative models fit to
 the consensus network.
 
-(1) Identify the best fit models based on lowest energy
+(1) Identify the best-fit models based on the lowest energy
 (2) Create mean energy landscapes
 (3) Calculate organizational measures for the simulated networks
 (4) Explore spatial embedding of local organizational structure
@@ -20,10 +20,10 @@ the consensus network.
 clear;clc;
 
 % Add Brain Connectivity Toolbox
-addpath('/imaging/astle/am11/toolboxes/2019_03_03_BCT/');                        % <<<<<<<<<< SET
+addpath('/set/your/path/');           % <<<<<<<<<< SET
 
 % Add data path 
-addpath('/imaging/astle/am11/dHCP/neonatal_generative_modelling/example_data/'); % <<<<<<<<<< SET
+addpath('/set/your/path/');           % <<<<<<<<<< SET
 % Load binarized networks
 load('example_binarized_connectomes.mat');
 % Load consensus network
