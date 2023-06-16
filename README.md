@@ -4,6 +4,7 @@ Mousley, A., Akarca, D., & Astle, D.E. (2023). Premature birth changes wiring co
 For any questions regarding the use of this repository, please get in touch at alexa.mousley@mrc-cbu.cam.ac.uk
 
 **Requirements**
+
 Software
 * MATLAB 2020B (installation: https://uk.mathworks.com/help/install/install-products.html)
 * RStudio 4.1.2 (installation: https://rstudio.com/products/rstudio/download/)
@@ -16,16 +17,16 @@ Toolboxes/Functions
 
 **Script outline:**
 1) Observed topological analysis
-	A. network_thresholding.m
-	B. create_consensus_network.m
-	C. identify_rich_club_nodes.m
-	D. calculate_organizational_measures.m
-	E. organizational_analysis.R  
+	- A. network_thresholding.m
+	- B. create_consensus_network.m
+	- C. identify_rich_club_nodes.m
+	- D. calculate_organizational_measures.m
+	- E. organizational_analysis.R  
 
 3) Initial generative network model selection 
-	A run_initial_generative_models.m
-	B analyze_initial_generative_models.m  
-	D compare_initial_models_plot.R
+	- A run_initial_generative_models.m
+	- B analyze_initial_generative_models.m  
+	- D compare_initial_models_plot.R
 
 4) Individually fit generative network models 
 	A run_individual_generative_models.m
