@@ -19,11 +19,11 @@ addpath('/set/your/path/');                        % <<<<<<<<<< SET
 % Add data path 
 addpath('/set/your/path/');                        % <<<<<<<<<< SET
 % Load consensus network
-load('/example_consensus_network.mat');
+load('example_consensus_network.mat');
 % Load binarized networks
-load('/example_binarized_connectomes.mat');
+load('example_binarized_connectomes.mat');
 % Load atlas Euclidean distances
-load('/euclidean_distances.mat');
+load('euclidean_distances.mat');
 
 null_sample = 1000;  % Choose the number of null models
 
