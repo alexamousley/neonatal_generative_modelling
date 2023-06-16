@@ -3,7 +3,8 @@ After downloading and adding the path to this folder in the scripts, you should 
 The variables are not well organized due to the ease of being able to set one path and run all scripts, however, please contact 
 Alexa Mousley (alexa.mousley@mrc-cbu.cam.ac.uk) if you have any questions. 
 
-** Atlas **
+**Atlas**
+
 The atlas data (regions and euclidiean_distances) has been calculated from the AAL90 neonatal atlas.
 
 **The atlas is publicly available at:**
