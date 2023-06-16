@@ -15,6 +15,9 @@ Toolboxes/Functions
 * Consensus network creation (https://www.brainnetworkslab.com/coderesources)
 	- Betzel, R. F., Griffa, A., Hagmann, P., & Mišić, B. (2019). Distance-dependent consensus thresholds for generating group-representative structural brain networks. Network neuroscience, 3(2), 475-496.
 
+**Example data**
+Fake data is provided for 10 'participants' (see /example_data/README.md).
+
 **Script outline:**
 1) Observed topological analysis
 	- A_network_thresholding.m
