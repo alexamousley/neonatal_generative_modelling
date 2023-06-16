@@ -5,11 +5,11 @@ Written by Alexa Mousley, MRC Cognition and Brain Sciences Unit
 Email: alexa.mousley@mrc-cbu.cam.ac.uk
 
 This script uses two parameters, which are pre-defined to represent a
-'term' and 'preterm' network, and runs 1000 iterations of the matching
+'term' and 'preterm' network and runs 1000 iterations of the matching
 generative model. The difference between these models and the previous
 models is that we are saving the network at every iteration (i.e., every
 time a new connection is added), in order to explore how the network
-developes. This involved adapting the Brain Connectivity Toolbox's
+develops. This involved adapting the Brain Connectivity Toolbox's
 generative_model.m function.
 
 
@@ -19,8 +19,8 @@ generative_model.m function.
 
 clear;clc;
 
-% Set save directory (if you would like to save the models, rather than use the example data provided)
-sdir = '/set/your/path/';            % <<<<<<<<<< SET
+% Set save directory 
+%sdir = '/set/your/path/';            % <<<<<<<<<< SET if you would like to save the models, rather than use the example data provided (uncomment lines 182 and 184)
 
 % Add Brain Connectivity Toolbox
 addpath('/set/your/path/');          % <<<<<<<<<< SET
@@ -179,6 +179,6 @@ end
 %% Save models
 
 % Change directory
-cd(sdir);
+%cd(sdir);
 % Save file
-save('example_developmental_generative_models.mat','developmental_gnms','-v7.3'); % Likely will need the '-v7.3' due to size of the struct
+%save('example_developmental_generative_models.mat','developmental_gnms','-v7.3'); % Likely will need the '-v7.3' due to size of the struct
