@@ -1,4 +1,4 @@
-This folder contains **fake data** for 10 'participants' for all variables necessary to run the scripts. 
+This folder contains random **placeholder** data (which hold no properties representative of real networks) for all variables necessary to run the scripts. 
 After downloading and adding the path to this folder in the scripts, you should  be able to run every script using the example data. 
 The variables are not well organized due to the ease of being able to set one path and run all scripts, however, please contact 
 Alexa Mousley (alexa.mousley@mrc-cbu.cam.ac.uk) if you have any questions. 
