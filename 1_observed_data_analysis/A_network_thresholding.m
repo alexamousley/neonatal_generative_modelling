@@ -4,12 +4,12 @@
 Written by Alexa Mousley, MRC Cognition and Brain Sciences Unit
 Email: alexa.mousley@mrc-cbu.cam.ac.uk
 
-This script takes raw networks, performs consensus thresholding followed by
+This script takes raw networks and performs consensus thresholding followed by
 absolute thresholding and binarization.
 
 Note: If you are using the example data, the consensus thresholding will
-need to be much lower that 60% as the data is random and therefore not many
-'connecitions' will be in common across the fake particpipants
+need to be much lower than 60% as the data is random and therefore there won't 
+be many common 'connections'.
 
 %}
 %% Add paths and load data
